@@ -1,0 +1,15 @@
+body {
+	background: $color-secondary;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	margin: auto;
+	box-shadow: $shadow-2;
+	background: $color-white;
+	color: $color-secondary;
+}

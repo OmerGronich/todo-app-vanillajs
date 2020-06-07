@@ -1,0 +1,14 @@
+// Padding
+$padding-standard: 1.5rem;
+$padding-large: 2rem;
+
+// Hidden
+.hidden {
+	opacity: 0 !important;
+}
+
+// Inset box shaddow
+
+.box-shadow-inset {
+	box-shadow: $shadow-2-inset;
+}

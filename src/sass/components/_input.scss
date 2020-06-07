@@ -1,0 +1,12 @@
+.add-todo {
+	width: 100%;
+	display: flex;
+	padding: $padding-large;
+
+	&__input {
+		border: none;
+		outline: none;
+		font-size: 1.5rem;
+		margin-left: 1.5rem;
+	}
+}
