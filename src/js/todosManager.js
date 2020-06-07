@@ -48,6 +48,7 @@ class TodosManager {
 			const todo = this.todos[prop];
 			if (!todo.isDone) {
 				areAllCompleted = false;
+				break;
 			} else {
 				areAllCompleted = true;
 			}
