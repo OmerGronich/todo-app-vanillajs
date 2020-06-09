@@ -5,6 +5,7 @@ class UI {
 		this.toggleAllBtn = document.getElementById('toggle-all');
 		this.toolTip = document.getElementById('tooltip');
 		this.todosManager = todosManager;
+		this.listFinished = document.getElementById('list-finished');
 	}
 
 	clearInput() {
@@ -13,6 +14,10 @@ class UI {
 
 	clearList() {
 		this.list.innerHTML = '';
+	}
+
+	clearFinishedList() {
+		this.listFinished.innerHTML = '';
 	}
 
 	checkIfDone() {
@@ -92,6 +97,7 @@ class UI {
 
 	renderTodoList() {
 		this.clearList();
+		this.clearFinishedList();
 		const todos = this.todosManager.todos;
 		if (Object.keys(todos).length) {
 			for (let prop in todos) {
@@ -113,7 +119,12 @@ class UI {
 
 				this.attachListeners(todoLiElement, todo._id, todo.isDone);
 
-				this.list.append(todoLiElement);
+				if (!todo.isDone) {
+					this.list.append(todoLiElement);
+				} else {
+					this.listFinished.append(todoLiElement);
+				}
+
 				this.toggleAllBtn.classList.remove('hidden');
 				this.toolTip.classList.remove('hidden');
 			}

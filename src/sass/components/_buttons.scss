@@ -20,3 +20,9 @@
 		margin-left: 1rem;
 	}
 }
+
+.list.finished {
+	.btn {
+		color: $color-white;
+	}
+}

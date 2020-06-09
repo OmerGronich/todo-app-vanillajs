@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	background: $color-white;
 }
 
 .list-item {
@@ -49,5 +50,15 @@
 			text-decoration: line-through;
 			opacity: .3;
 		}
+	}
+}
+
+.list.finished {
+	opacity: 0.6;
+	color: $color-white;
+	background: transparent;
+
+	& .list-item:not(:first-child) {
+		border-top: none;
 	}
 }
