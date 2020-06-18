@@ -1,0 +1,28 @@
+.btn {
+	color: $color-secondary;
+	opacity: .7;
+	transition: .3 ease;
+
+	&:hover {
+		color: $color-primary-dark;
+	}
+
+	// &--toggle-all {
+	// }
+
+	&--toggle-one {
+		margin-right: 1rem;
+	}
+
+	&--remove {
+		justify-self: flex-end;
+		font-size: 2.5rem;
+		margin-left: 1rem;
+	}
+}
+
+.list.finished {
+	.btn {
+		color: $color-white;
+	}
+}

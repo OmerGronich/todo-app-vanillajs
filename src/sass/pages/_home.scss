@@ -1,0 +1,19 @@
+body {
+	background: $color-secondary;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	margin: auto;
+	box-shadow: $shadow-2;
+	color: $color-secondary;
+}
+
+.container.container-finished {
+	margin-top: 4rem;
+	box-shadow: none;
+}

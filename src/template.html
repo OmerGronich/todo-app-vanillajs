@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/88ab1ebf3e.js" crossorigin="anonymous"></script>
+  <title>Todo List</title>
+</head>
+<body>
+  <h1 class="heading-primary">todo list</h1>
+  <div class="container">
+    <label class="add-todo" for="add-todo">
+    <i id="toggle-all" class="fas fa-chevron-circle-down btn btn--toggle-all hidden"></i>
+    <input class="add-todo__input" type="text" placeholder="Add a task..." id="add-todo">
+    </label>
+    <ul id="list" class="list"></ul>
+  </div>
+  <div class="container container-finished">
+    <div class="divider"></div>
+    <ul id="list-finished" class="list finished"></ul>
+  </div>
+  <p class="tooltip hidden" id="tooltip">double click to edit</p>
+</body>
+</html>
